@@ -10,3 +10,27 @@ Fixed one:
 Evaluation test: 
 
 ![image](https://user-images.githubusercontent.com/63869574/131929758-ca7eb57d-7d19-4932-871e-2e3096847e7d.png)
+
+
+
+Another useful example...
+
+```javascript
+open util/integer
+
+sig a{value: Int}
+{
+value = 4
+}
+sig b{value: Int}
+{
+value = 1
+}
+sig sumab{
+	value : Int
+}
+{
+value = plus[a.value, b.value]
+}
+run add for 10 int, exactly 1 sumab, exactly 1 a, exactly 1 b
+```
