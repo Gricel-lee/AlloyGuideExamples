@@ -44,7 +44,7 @@ sig sumab{
 	value : Int
 }
 {
-value = plus[a.value, b.value]
+value = plus[a.value, b.value] // same as:  value=a.value.plus[ b.value]
 }
 
 pred add{}
