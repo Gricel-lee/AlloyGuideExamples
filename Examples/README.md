@@ -13,9 +13,12 @@
 
 ![image](https://user-images.githubusercontent.com/63869574/131929758-ca7eb57d-7d19-4932-871e-2e3096847e7d.png)
 
+Figure 1.
 
 
-- Another useful example...
+- Another useful example is the next one. Notice that there are two "sums" done (see Figure 2):
+	- **sig abc** with __value= a.value + b.value + c.value__ . This means that abc.value from abc is a relation to the elements a.value, b.value and c.value.
+	- **sig sumab** with __value = plus[a.value, b.value]__ . This means that sumab.value is the sum of the integers a.value and b.value.
 
 ```javascript
 open util/integer
@@ -28,15 +31,29 @@ sig b{value: Int}
 {
 value = 1
 }
+sig c{value: Int}
+{
+value = 3
+}
+sig abc{value: set Int}
+{
+	value = a.value + b.value + c.value
+}
+
 sig sumab{
 	value : Int
 }
 {
 value = plus[a.value, b.value]
 }
-run add for 10 int, exactly 1 sumab, exactly 1 a, exactly 1 b
+
+pred add{}
+
+run add for 4 int, exactly 1 sumab, exactly 1 a, exactly 1 b, exactly 1 c, exactly 1 abc
 ```
 
 - Visualizing the model found:
  
-![image](https://user-images.githubusercontent.com/63869574/131930545-d4c74842-62f6-4bad-9299-bf9d7ffe57c5.png)
+![image](https://user-images.githubusercontent.com/63869574/132242713-e9d61423-6524-4ac4-86b5-bd4c83056700.png)
+Figure 2. 
+
