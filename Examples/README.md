@@ -57,3 +57,21 @@ run add for 4 int, exactly 1 sumab, exactly 1 a, exactly 1 b, exactly 1 c, exact
 ![image](https://user-images.githubusercontent.com/63869574/132242713-e9d61423-6524-4ac4-86b5-bd4c83056700.png)
 Figure 2. 
 
+
+For the sum of a set of integers, use **sum**:
+
+```javascript
+sig a{value: set Int}
+{
+value = {int 3 + int 2 + int 4}
+}
+
+
+sig suma{
+	value : Int
+}
+{value = sum[a.value] }
+
+pred add{}
+
+run add for 5 int, exactly 1 suma, exactly 1 a```
