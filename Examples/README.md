@@ -75,3 +75,8 @@ sig suma{
 pred add{}
 
 run add for 5 int, exactly 1 suma, exactly 1 a```
+
+
+
+Other useful operators: (from book: Software Abstractions: Logic, Language, and Analysis; By Daniel Jackson)
+![image](https://user-images.githubusercontent.com/63869574/132491217-329ba498-6aab-4f30-a94b-ff7407b3fb69.png)
