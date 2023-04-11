@@ -4,6 +4,7 @@ Examples and solutions to problems encountered when using Alloy and Alloy Analyz
 
 
 
+https://alloytools.org/tutorials/day-course/s1_logic.pdf
 
 ## Logic relational 
 In Alloy, relations can be done using the dot operator. In the following example, "p." means:
@@ -35,3 +36,7 @@ However, when writing ```Book.address.myName```, we are looking for a map from `
 
 
 ![image](https://user-images.githubusercontent.com/63869574/231194173-5f932490-502b-4783-bb39-5fe8302f566b.jpeg)
+
+### Unary operators
+
+![image](https://user-images.githubusercontent.com/63869574/231202202-11745fb0-b06f-4b53-924f-ed4af36ab929.jpeg)
